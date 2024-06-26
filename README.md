@@ -25,9 +25,57 @@ Make sure you have the following installed on your machine:
 
 ### Running the Project
 
-1. Clone the repository:
+Clone the repository:
 
 git clone https://github.com/steiit00/Distributed-Systems-SS24.git
 cd Distributed-Systems-SS24-main
 
+Build and start the Docker containers
+
 docker-compose up --build
+
+### Stopping the Project
+
+docker-compose down
+
+### Project Structure
+
+backend/ - Spring Boot application
+frontend/ - React application
+database/ - MySQL database
+
+## Endpoints
+
+GET /todos
+POST /todos/
+DELETE /todos/
+
+## Configuration
+
+The Docker Compose file (docker-compose.yml) contains the configuration for the backend, frontend, and database containers. 
+
+## Error Handling
+
+If an error occurs during any operation, the server will respond with a 500 (Internal Server Error) status code along with an error message.
+
+## Kubernetes
+Ensure kubectl and minikube or kind are installed.
+Run:
+minikube start
+kubectl apply -f sample/otel-in-action/deployment.yaml
+
+Forward Port for Codespaces:
+kubectl port-forward service/todoui-flask 5000:5000
+kubectl port-forward service/todoui-thymeleaf 8090:8090
+
+Now you can observe the deployments:
+kubectl get deployments
+
+See Service Ports and IPs:
+kubectl get services
+
+# Support
+For support, please contact steiit00@hs-esslingen.de or mameit06@hs-esslingen.de .
+
+### Authors and Acknowledgments
+This project was developed by Stefan Eisele and Matthias Maier.
