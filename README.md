@@ -9,6 +9,7 @@ To make it easy for you to get started with Docker and set up the project, follo
 ## get your files
 
 git clone https://github.com/steiit00/Distributed-Systems-SS24.git
+
 cd Distributed-Systems-SS24
 
 ## Set Up the Project
