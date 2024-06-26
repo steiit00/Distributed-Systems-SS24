@@ -15,10 +15,16 @@ cd Distributed-Systems-SS24
 ## Set Up the Project
 
 ### Before starting the project you have to run Maven package to create the jar file. Unfortunately, the jar file is to big to upload to GitHub and is needed to create the image for todo-service.
-check if Maven and java environment variable is set up if not (https://stackoverflow.com/questions/1672281/how-to-set-the-environment-variables-for-java-in-windows) & https://stackoverflow.com/questions/5510690/environment-variable-with-maven
+check if Maven and java environment variable is set up. 
 
-go to the right directory with pom.xml file in it cd ..\backend\todo-dervice
-1. mvn clean install 
+If not, check https://stackoverflow.com/questions/1672281/how-to-set-the-environment-variables-for-java-in-windows & https://stackoverflow.com/questions/5510690/environment-variable-with-maven
+
+go to the right directory with pom.xml file in it 
+
+cd ..\backend\todo-dervice
+
+1. mvn clean install
+   
 2. mvn spring-boot:run
 
 Now the backend should be ready for docker.
@@ -46,13 +52,17 @@ docker-compose down
 ### Project Structure
 
 backend/ - Spring Boot application
+
 frontend/ - React application
+
 database/ - MySQL database
 
 ## Endpoints
 
-GET /todos
+GET /todos/
+
 POST /todos/
+
 DELETE /todos/
 
 ## Configuration
@@ -65,22 +75,31 @@ If an error occurs during any operation, the server will respond with a 500 (Int
 
 ## Kubernetes
 Ensure kubectl and minikube or kind are installed.
+
 Run:
+
 minikube start
+
 kubectl apply -f sample/otel-in-action/deployment.yaml
 
 Forward Port for Codespaces:
+
 kubectl port-forward service/todoui-flask 5000:5000
+
 kubectl port-forward service/todoui-thymeleaf 8090:8090
 
 Now you can observe the deployments:
+
 kubectl get deployments
 
 See Service Ports and IPs:
+
 kubectl get services
 
 # Support
+
 For support, please contact steiit00@hs-esslingen.de or mameit06@hs-esslingen.de .
 
 ### Authors and Acknowledgments
+
 This project was developed by Stefan Eisele and Matthias Maier.
