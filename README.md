@@ -16,7 +16,14 @@ cd Distributed-Systems-SS24
 
 ## Set Up the Project
 
-### Before starting the project you have to run Maven package to create the jar file. The jar file is to big to upload to GitHub and is needed to create the image for todo-service.
+### Before starting the project you have to run Maven package to create the jar file. Unfortunately, the jar file is to big to upload to GitHub and is needed to create the image for todo-service.
+check if Maven and java environment variable is set up if not (https://stackoverflow.com/questions/1672281/how-to-set-the-environment-variables-for-java-in-windows) & https://stackoverflow.com/questions/5510690/environment-variable-with-maven
+
+go to the right directory with pom.xml file in it cd ..\backend\todo-dervice
+1. mvn clean install 
+2. mvn spring-boot:run
+
+Now the backend should be ready for docker.
 
 Make sure you have the following installed on your machine:
 
