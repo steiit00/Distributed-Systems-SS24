@@ -42,8 +42,8 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 To build the Docker image, run the following command in the project directory:
 
-```sh
-docker build -t my-react-app .
+`sh
+docker build -t my-react-app .`
 
 ##Run Docker Container
 To run the Docker container, use the following command:
