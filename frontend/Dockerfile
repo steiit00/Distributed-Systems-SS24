@@ -1,23 +1,18 @@
-# Base image
-FROM node:18-alpine
+# Stage 1: Build the React app
+FROM node:18-alpine as build
 
-# Set the working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json (if available)
 COPY package*.json ./
-
-# Install dependencies
 RUN npm install --legacy-peer-deps
 
-# Copy the rest of the project files
 COPY . .
-
-# Build the project
 RUN npm run build
 
-# Expose the port
-EXPOSE 8080
+# Stage 2: Serve the React app
+FROM nginx:alpine
 
-# Start the server
-CMD [ "npm", "run", "serve" ]
+COPY --from=build /app/build /usr/share/nginx/html
+
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
