@@ -1,0 +1,14 @@
+C:\Users\Stefan\VS2024\backend\todo-service\src\main\java\Lab\Repository\TodoRepository.java
+C:\Users\Stefan\VS2024\backend\todo-service\src\main\java\Lab\config\WebConfig.java
+C:\Users\Stefan\VS2024\backend\todo-service\src\main\java\Lab\Controller\TodoController.java
+C:\Users\Stefan\VS2024\backend\todo-service\src\main\java\Lab\data\dto\TodoDTO.java
+C:\Users\Stefan\VS2024\backend\todo-service\src\main\java\Lab\data\Todo.java
+C:\Users\Stefan\VS2024\backend\todo-service\src\main\java\Lab\data\mapper\TodoMapper.java
+C:\Users\Stefan\VS2024\backend\todo-service\src\main\java\Lab\Service\TodoService.java
+C:\Users\Stefan\VS2024\backend\todo-service\src\main\java\Lab\enums\Roles.java
+C:\Users\Stefan\VS2024\backend\todo-service\src\main\java\Lab\Service\TodoServiceImpl.java
+C:\Users\Stefan\VS2024\backend\todo-service\src\main\java\Lab\DemoApplication.java
+C:\Users\Stefan\VS2024\backend\todo-service\src\main\java\Lab\exception\ResourceNotFoundException.java
+C:\Users\Stefan\VS2024\backend\todo-service\src\main\java\Lab\data\dto\AbstractDTO.java
+C:\Users\Stefan\VS2024\backend\todo-service\src\main\java\Lab\data\AbstractModel.java
+C:\Users\Stefan\VS2024\backend\todo-service\src\main\java\Lab\Tools\Responses.java
