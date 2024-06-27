@@ -10,24 +10,9 @@ To make it easy for you to get started with Docker and set up the project, follo
 
 git clone https://github.com/steiit00/Distributed-Systems-SS24.git
 
-cd Distributed-Systems-SS24
+cd ../Distributed-Systems-SS24-main
 
 ## Set Up the Project
-
-### Before starting the project you have to run Maven package to create the jar file. Unfortunately, the jar file is to big to upload to GitHub and is needed to create the image for todo-service.
-check if Maven and java environment variable is set up. 
-
-If not, check https://stackoverflow.com/questions/1672281/how-to-set-the-environment-variables-for-java-in-windows & https://stackoverflow.com/questions/5510690/environment-variable-with-maven
-
-go to the right directory with pom.xml file in it 
-
-cd ..\backend\todo-dervice
-
-1. mvn clean install
-   
-2. mvn spring-boot:run
-
-Now the backend should be ready for docker.
 
 Make sure you have the following installed on your machine:
 
@@ -44,6 +29,18 @@ cd Distributed-Systems-SS24-main
 Build and start the Docker containers
 
 docker-compose up --build
+
+or in the background
+docker-compose up --build -d
+
+If the containers do not work properly after the initial build and startup, you can restart all the containers with:
+docker-compose restart
+
+Once the project is built, you can access the todo list application in your browser at http://localhost:3000/. 
+
+The application prioritizes tasks and sorts them by priority. 
+
+Tasks that are marked as important will be displayed in red, while other tasks will be shown in yellow or green depending on their urgency.
 
 ### Stopping the Project
 
